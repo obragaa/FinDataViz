@@ -1,0 +1,84 @@
+/* style.css */
+body {
+    background-color: #2C2C2E;
+    color: #E7E7E9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card-charts-dad {
+    background: #1C1C1E;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 200vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: auto;
+}
+
+.canvas-charts {
+    width: 50vw;
+    max-width: 600px;
+    height: 400px; /* Ajuste conforme necessário */
+}
+
+.navbar {
+    background-color: #1C1C1E;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: #64D2FF;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #007AFF;
+}
+
+.navbar i {
+    font-size: 16px; /* Ou qualquer outro tamanho adequado */
+    margin-right: 8px;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card {
+    background: #1C1C1E;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card h1 {
+    color: #007AFF;
+}
+
+footer {
+    background-color: #1C1C1E;
+    color: #E7E7E9;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}

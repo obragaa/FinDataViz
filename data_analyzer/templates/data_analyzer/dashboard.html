@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-info-circle"></i> About</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>    
+    <div class="main-content">
+        <div class="card">
+            <h1>Welcome to Your Dashboard</h1>
+            <p>This is a simple dashboard using a refined color palette.</p>
+        </div>
+        <div class="card-charts-dad">
+            <canvas class="canvas-charts" id="stockChart"></canvas>
+        </div>
+        <div class="card-charts-dad">
+            <canvas class="canvas-charts" id="barChart"></canvas>
+        </div>  
+        <div class="card-charts-dad">
+            <canvas class="canvas-charts" id="doughnutChart"></canvas>
+        </div>    
+        <div class="card">
+            <h1>Settings</h1>
+            <p>Manage your settings and configurations here.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Dashboard. All rights reserved.
+    </footer>
+    <script type="text/javascript">
+        var stockDates = {{ dates|safe }};
+        var stockPrices = {{ prices|safe }};
+    </script>      
+    <script src="{% static 'js/charts.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% load data_analyzer_extras %} <!-- Carregue os filtros customizados aqui -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Data</title>
+</head>
+<body>
+    <h1>Stock Data for {{ stock_symbol }}</h1>
+    {% for item in daily_data_list %}
+    <p>Date: {{ item.date }}, Close: {{ item.close }}</p>
+    {% endfor %}
+</body>
+</html>
