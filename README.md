@@ -40,8 +40,8 @@ Acesse http://127.0.0.1:8000/ para ver o aplicativo em ação.
 
 Contribuições são o que fazem a comunidade open source um lugar incrível para aprender, inspirar e criar. Todas as contribuições que você fizer são muito apreciadas.
 
-    Faça um Fork do projeto
-    Crie sua Feature Branch (git checkout -b feature/AmazingFeature)
-    Faça commit das suas mudanças (git commit -m 'Add some AmazingFeature')
-    Faça Push para a Branch (git push origin feature/AmazingFeature)
-    Abra um Pull Request
+1. Faça um Fork do projeto
+2. Crie sua Feature Branch (git checkout -b feature/AmazingFeature)
+3. Faça commit das suas mudanças (git commit -m 'Add some AmazingFeature')
+4. Faça Push para a Branch (git push origin feature/AmazingFeature)
+5. Abra um Pull Request
